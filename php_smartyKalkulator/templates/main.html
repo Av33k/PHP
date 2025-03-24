@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{$page_description|default:"Opis domyślny"}">
+    <title>{$page_title|default:"Kalkulatory"}</title>
+
+    <link rel="stylesheet" href="{$app_url}/assets/css/main.css">
+    <link rel="stylesheet" href="{$app_url}/assets/css/noscript.css">
+
+    <script src="{$app_url}/assets/js/jquery.min.js"></script>
+    <script src="{$app_url}/assets/js/main.js"></script>
+</head>
+<body class="is-preload">
+
+    <div id="wrapper">
+        <header id="header">
+            <h1>{$page_title|default:"Tytuł domyślny"}</h1>
+            <p>{$page_description|default:"Opis domyślny"}</p>
+        </header>
+
+        <div id="main" class="content-wrapper">
+            <section id="content">
+                {block name=content} Domyślna treść zawartości... {/block}
+            </section>
+        </div>
+
+        <footer id="footer">
+            <p>{block name=footer}przykładowa tresć stopki wpisana do szablonu głównego z szablonu kalkulatora{/block}</p>
+        </footer>
+    </div>
+
+</body>
+</html>
